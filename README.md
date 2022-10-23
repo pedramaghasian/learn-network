@@ -125,4 +125,145 @@ at layer 2 on ethernet it uses a type field
 
 when a device receives a frame at layer 2 it needs to know which protocol to use... in other words is it an IPv4 packet or is it an IPv6 packet? it's based on the type field at layer 2
 
-4-4
+> The "Type" field in Ethernet II frames tells the OS what kind of data the frame carries – 0x0800 means that the frame has an IPv4 packet; there's a list of different EtherTypes.
+
+[answer](https://superuser.com/a/423281)
+
+![10](images/10.png) 
+
+
+-------------------------
+
+# Binary
+
+**2^n** = number of binary values
+
+![11](images/11.png) 
+ 
+![12](images/12.png) 
+
+![13](images/13.png) 
+
+![14](images/14.png) 
+
+**octet**
+
+![15](images/15.png) 
+
+**ipv4** = 4 octet
+
+**192.168.2.16** = 8bits . 8bits . 8bits .8bits
+
+![16](images/16.png) 
+
+**IP Address Example**
+
+![17](images/17.png) 
+
+------------------
+
+# Hexadecimal 
+
+**ARP is used to find the MAC address of another device in the network it's basically broadcast sent out into the network saying who has this IP address and that device will reply back with its MAC address**
+
+![18](images/18.png) 
+
+![19](images/19.png) 
+
+![20](images/20.png) 
+
+`ipconfig /all` in windows show MAC address
+
+`arp -a` show MAC address
+
+**some cisco switches command**
+
+1. `en` takes us to privilege mode
+2.  `show mac address-table`
+
+-----------------------
+
+# IP Addressing
+
+## what is an IP Address
+
+![21](images/21.png) 
+
+**a lot of web sites don't permit PING which uses ICMP so the request times out, but the DNS server resolve**
+
+**`nslookup` just does a DNS resolution of a domain name rather than trying to ping the server**
+
+**IP Characteristics**
+
+![22](images/22.png) 
+
+![23](images/23.png) 
+
+## Network vs Host Portion
+
+![24](images/24.png) 
+
+## IPv4 format
+
+![25](images/25.png) 
+
+**IPv4 classes**
+
+![26](images/26.png) 
+
+**Class A**
+
+![27](images/27.png)
+
+![28](images/28.png) 
+
+![29](images/29.png) 
+
+**Class B**
+
+![30](images/30.png) 
+
+![31](images/31.png) 
+
+**Class C**
+
+![32](images/32.png) 
+
+![33](images/33.png) 
+
+**Class D**
+
+**Multicast** one device has talking to a group of devices
+
+![34](images/34.png) 
+
+**Class E**
+
+**Reserved classes for broadcast**
+
+![35](images/35.png) 
+
+## summary
+
+![36](images/36.png) 
+![37](images/37.png) 
+![38](images/38.png) 
+
+
+## Directed Broadcast Address
+
+![39](images/39.png) 
+
+**CPU of every device will be interrupted to process the directed broadcast**
+
+![40](images/40.png) 
+
+## Local Broadcast Address
+
+![41](images/41.png) 
+
+## Local Loopback Address
+
+![42](images/42.png) 
+
+7-10
