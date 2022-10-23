@@ -266,4 +266,15 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 ![42](images/42.png) 
 
+## Private Address
+
+**Essentially a lot of the information that we're studying in networking, comes originally form RFCs**
+
+**RFC1149 describe IP**
+
+**RFC1948 Private IP**
+
+![43](images/43.png) 
+
+
 7-10
