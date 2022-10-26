@@ -276,5 +276,60 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 ![43](images/43.png) 
 
+![44](images/44.png) 
 
-7-10
+## Link - Local Addresses
+
+![45](images/45.png) 
+
+**if you'r IP address in the range 169.254.0.0 that means the PC was not able to get an IP address via a DHCP.**
+
+## Subnet Mask
+
+**a subnet mask is used to determine which part of an IP address is the network portion and which part of the address is the host portion**
+
+<kbd>
+
+![46](images/46.png) 
+</kbd>
+
+![47](images/47.png) 
+![48](images/48.png) 
+![49](images/49.png) 
+![50](images/50.png) 
+
+**how does a device know whether another device is local or remote to itself??**
+
+![51](images/51.png) 
+
+**Example**
+
+![52](images/52.png) 
+![53](images/53.png) 
+
+**Discontiguous Network Mask**
+
+![54](images/54.png) 
+
+## CIDR (Classless Inter-Domain Routing)
+
+![55](images/55.png) 
+![56](images/56.png) 
+
+
+**Notice in class A B C addresses, the subnet mask is set on the Octet Boundary**
+
+**with CIDR the subnet mask can be somewhere in the middle, It doesn't have to be on the octet boundary.**
+
+![57](images/57.png) 
+
+**so from 1993 CIDR is more preferable than classfull network mask.**
+
+![58](images/58.png) 
+![59](images/59.png) 
+
+----------------------------------
+
+# Initial Device Configuration
+
+8-1
