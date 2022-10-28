@@ -54,7 +54,10 @@ now a server, will be listening on different prot numbers for different protocol
 
 **server has to listen on specific prot numbers for specific protocols.**
 
+
 ## Networking Devices Repeaters, Hubs, Switches, Routers
+
+### so in conclusion, hubs and switches are used to create networks while routers are used to connect networks.
 
 **repeaters => hubs => bridges(learns MAC addresses in software) => switch(learns MAC addresses mu ch more quickly by using hardware ASICs Application Specific Integrated Circuits)**
 
@@ -288,11 +291,9 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 **a subnet mask is used to determine which part of an IP address is the network portion and which part of the address is the host portion**
 
-<kbd>
+
 
 ![46](images/46.png) 
-</kbd>
-
 ![47](images/47.png) 
 ![48](images/48.png) 
 ![49](images/49.png) 
@@ -331,5 +332,107 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 ----------------------------------
 
 # Initial Device Configuration
+
+
+## switch initial configuration
+
+**Do NOT plug direct pc to a cisco switch with RJ45 cable!!**
+
+**just plug with USB!!**
+
+1. **we connected a cisco switch to a computer**
+2. **with putty and serial connection type we connected to the switch (COM Ports)**
+3. **with `en` command go to the administrator mode**
+4. `erase startup-config`
+5. `show version`
+6. `configure terminal` global configuration
+7. `hostname <your_hostname>`
+8. `end` take back to to enable mode
+9. `copy running-config startup-config` or `wr` save config to the disk
+
+## Router initial configuration
+
+**connect CONSOLE cable to the RS-232 of pc to the CONSOLE prot of the router**
+
+![60](images/60.png) 
+
+## build a basic cisco network
+
+**another difference between switches and routers is switch interfaces by default come up generally, but router interfaces all by default disabled or shut down you need to enable those interfaces by using the no shutdown command.**
+
+**config ip address in the router :**
+
+1. `en`
+2. `show ip int brief` show interface_number
+3. `conf t`
+4. `interface <choose_interface> <interface_number>`
+5. `interface GigabitEthernet 0/0/0` 
+6. `ip address 10.1.1.1 255.255.255.0`
+7. `no shutdown`
+8. `end`
+9. `hostname R1`
+10. `end`
+11. `copy running-config startup-config` or `wr`
+
+1. `show ip interface <interface_name> <interface_number>`
+2. `show arp`
+3. `show running-config`
+
+**set enable password**
+1. `en`
+2. `conf t`
+3. `enable password <user_password>`
+
+**encrypt enable password**
+1. `en`
+2. `conf t`
+3. `service password-encryption`
+
+**config secret password**
+1. `en`
+2. `conf t`
+3. `enable secret <your_secret>`
+### secret password overwrite the enable password
+
+**telnet configuration**
+
+1. `en`
+2. `sh ru`
+3. see the status of line vty 0 4
+4. `conf t` 
+5. `line vty 0 4`
+6. `login`
+7. set password `password <your_pass>`
+8. `end`
+
+**config console password**
+1. `en`
+2. `conf t`
+3. `line console 0`
+4. `login`
+5. `password <your_pass>`
+6. `end`
+
+## Ethernet Cabling
+
+### Straight-through Cable :
+
+1. connect user to switch
+2. connect router to switch or hub
+
+![61](images/61.png) 
+
+### Crossover Cable :
+
+![62](images/62.png) 
+
+### Rolled Cable :
+
+![63](images/63.png) 
+
+-----------------------------
+
+# IP Subnetting
+
 
 8-1
