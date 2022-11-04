@@ -483,7 +483,38 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 ## How to Subdivide a network
 
+### why ?
+
+![81](images/81.png) 
+
+**It's not practically possible to have so many hosts on the subnet, a lot of network engineers will put a maximum of 254 hosts on a subnet, in other words they would subnet down to class C subnet**
 
 
+**the formula to work out how many host are supported on a subnet**
 
-10-1
+![82](images/82.png) 
+
+### how ?
+
+![83](images/83.png) 
+
+![84](images/84.png) 
+
+![85](images/85.png) 
+
+**Question 1**
+
+![86](images/86.png) 
+
+![87](images/87.png) 
+
+![88](images/88.png) 
+
+![89](images/89.png) 
+
+![90](images/90.png) 
+
+**we have taken 1 subnet supporting 254 hosts and change that into 16 subnets each supporting 14 hosts**
+
+
+10-5
