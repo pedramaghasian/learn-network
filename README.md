@@ -434,5 +434,56 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 # IP Subnetting
 
+## Binary Method
 
-8-1
+![64](images/64.png) 
+
+**Example 1**
+
+![65](images/65.png) 
+
+**Example 2**
+
+![66](images/66.png) 
+
+![67](images/67.png) 
+
+![68](images/68.png)
+
+![69](images/69.png) 
+
+**Example 3**
+
+![70](images/70.png) 
+
+![71](images/71.png) 
+
+![72](images/72.png) 
+
+
+## Quick Method 
+
+![73](images/73.png) 
+
+**Example 1**
+
+![74](images/74.png) 
+
+![75](images/75.png) 
+
+![76](images/76.png) 
+
+![77](images/77.png) 
+
+![78](images/78.png) 
+
+![79](images/79.png) 
+
+![80](images/80.png) 
+
+## How to Subdivide a network
+
+
+
+
+10-1
