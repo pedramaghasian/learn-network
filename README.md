@@ -514,7 +514,158 @@ when a device receives a frame at layer 2 it needs to know which protocol to use
 
 ![90](images/90.png) 
 
+![91](images/91.png) 
+
+
 **we have taken 1 subnet supporting 254 hosts and change that into 16 subnets each supporting 14 hosts**
 
+**Question 2**
 
-10-5
+![92](images/92.png)
+
+![93](images/93.png) 
+
+![94](images/94.png) 
+
+![95](images/95.png) 
+
+![96](images/96.png) 
+
+-------------------------------
+
+# IPv4 Subnetting Cheat Sheet
+
+[IPv4 Subnetting Cheat Sheet](./resources/1.%20PacketLife.net%20IPv4%20Subnetting%20Cheat%20Sheet.html)
+
+---------------------------------
+
+# Cabling and Packet Flows
+
+![97](images/97.png) 
+
+**Types of Communication**
+
+![98](images/98.png) 
+
+**OSI Model Overview**
+
+![99](images/99.png) 
+
+**Ethernet Born - 1970s**
+
+**Bus Topology**
+
+**in the original ethernet implementation the network architecture that was use was a bus topology**
+
+**in a bus topology, each devices connected to a single cable**
+
+![100](images/100.png) 
+
+**10base2**
+
+![101](images/101.png) 
+
+**MAC Address**
+
+![102](images/102.png) 
+
+![103](images/103.png) 
+
+## Broadcast domains, UTP & Cross Over Cables
+
+**10baseT**
+
+![104](images/104.png) 
+
+**Unshielded Twisted Pair (UTP)**
+
+![105](images/105.png) 
+
+![106](images/106.png) 
+
+**Straight Through Cables**
+
+![107](images/107.png) 
+
+**straight Through Cables are used to in situations where you connect a PC to a switch or a PC to a bridge or PC to a hub**
+
+**Cross Over Cable**
+
+![108](images/108.png) 
+
+## Which cable should you use and cable categories
+
+**in the past you'd have to know when to use a straight through or  crossover cable, however today automatic crossover or auto MDX is widely used or to MDX was introduced in 1998 and it**
+
+**Auto MDI/MDIX**
+
+![109](images/109.png) 
+
+**Cable Categories**
+
+![110](images/110.png) 
+![111](images/111.png) 
+
+
+
+## SFPs, DAC, Roll Over cable and how devices operate, hubs
+
+**Direct Attachment Cable (DAC) Copper Twinax**
+
+![112](images/112.png) 
+
+**Roll Over Cable**
+
+![113](images/113.png) 
+
+**Hub**
+
+**a hub is a layer one device in the OSI model and you would use a cat 5 unshielded twisted pair cable with an RJ45 connector to connect your laptop to a port on a hub**
+
+**wireless operates in the same way like a physical hub would**
+
+**a hub is physical layer device it's not intelligent and does not understand the fames going through it, it's basically multi port repeater and it will amplify or repeat the frames that it receives on one port out of all other ports.**
+
+![114](images/114.png) 
+
+**Hub vs 10baseT**
+
+![115](images/115.png) 
+
+## How does a Hub forward traffic
+
+so in this example, let's assume that A is sending traffic to C.
+
+so the source addres of the frame is A nad the destination address of the frame is C.
+
+A sends that frame to the hub.
+
+now because a hub is a multi port repeater in other words it's simply a repeater with multiple ports and it has no understanding of the traffic it receives, it will simply amplify the signal and send the traffic or frames out of **all ports**.
+
+so every device in this topology wil receive the frame sent from A to C.
+
+the network interface of B and D will receive the frame and read the destination MAC Address is C therefore the frame is not destined to themselves and the network interface cards will drop the frame.
+
+![116](images/116.png) 
+
+**the way the network is physically cabled is not necessarily the way the network is going to operate**
+
+![117](images/117.png) 
+
+## what is a bridge
+
+![118](images/118.png) 
+
+**Wireless networks act like hubs**
+
+**so overtime hubs wre replaces by bridges and bridges in turn have been replaces by switches**
+
+![119](images/119.png) 
+
+**Switch Vs Bridge**
+
+![120](images/120.png) 
+
+## Switch
+
+15-11
