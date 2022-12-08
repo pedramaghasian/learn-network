@@ -666,6 +666,62 @@ the network interface of B and D will receive the frame and read the destination
 
 ![120](images/120.png) 
 
-## Switch
+## Switch (layer2 - layer3)
 
-15-11
+**think of the switch as a bridge but it's much more powerful and quicker**
+
+![121](images/121.png) 
+
+**Example**
+
+![122](images/122.png) 
+
+## half Duplex and full Duplex
+
+![123](images/123.png) 
+
+![124](images/124.png) 
+
+![125](images/125.png) 
+
+## Router (layer 3)
+
+**Routers do not make routing decisions based on MAC addresses but Router use IP addresses when determining out of which interface is traffic should be sent.**
+
+![126](images/126.png) 
+
+**Routers don't populate their routing tables using IP addresses but Router populate the routing tables with network addresses. and they make their routing decision based on the network address, rather than individual IP addresses.**
+
+![127](images/127.png) 
+
+
+**Example**.
+
+![128](images/128.png) 
+
+**host A want ping 10.1.1.2**
+
+IP is a layer 3 technology - MAC address are used at layer 2 \
+so PC A needs to have a mapping between the layer 3 IP address \
+and the layer 2 MAC address. \
+that's because ethernet is used in this environment \
+and the packet needs to be encapsulated at layer 2 and sent into the wire. \
+so in Ethernet a MAC address needs to be added at layer 2. \
+so this point PC A doesn't know the MAC address associated with IP address 10.1.1.2. \
+so before A can send the traffic onto the network segment it needs to know the MAC address associated with IP address 10.1.1.2.
+
+**sho how is PC A going to learn the MAC address of PC C ?**
+
+it does this by using a protocol called ARP(Address Resolution Protocol). \
+`arp -a` local ARP cache. \
+`arp -d` delete local ARP cache. \
+the first thing PC A does is check its local ARP cache. \
+if does'nt find PC A send ARP broadcast and say who has IP address 10.1.1.2 and that message is called an **ARP Request Message**.
+
+
+**so when sending traffic from 1 subnet to another subnet the layer 3 headers contain the source host IP address and the destination host IP address. But at layer 2 the source MAC address is he local host and the destination MAC address is the local ROUTER(default gateway)**
+
+![129](images/129.png) 
+
+
+19-1
