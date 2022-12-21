@@ -723,5 +723,87 @@ if does'nt find PC A send ARP broadcast and say who has IP address 10.1.1.2 and 
 
 ![129](images/129.png) 
 
+-------------------------------------------------
 
-19-1
+# Duplex and Speed Mismatch Demo
+
+**I will come back for you later**
+19-1 
+
+--------------------------------------------------
+
+# What is a loopback
+
+**What is the purpose of the loopback interfaces?**
+
+the difference between a physical interface and a loopback interface is a loopback interface is a logical interface on a router and you can create many of these.
+
+------------------------------------------------
+
+# TCP UDP
+
+## TCP/IP Transport Layer (Layer 4 of OSI Model)
+
+![130](images/130.png) 
+
+**UDP**
+
+![131](images/131.png) 
+![135](images/135.png) 
+![136](images/136.png) 
+
+
+**TCP**
+
+![132](images/132.png) 
+![137](images/137.png) 
+![138](images/138.png) 
+
+
+**socket**
+
+![133](images/133.png) 
+
+![134](images/134.png) 
+
+**Application**
+
+![139](images/139.png) 
+
+## How Layers Connect Together
+
+**layer 2 to layer 3** (determine witch protocol should use in layer3 ipv4 or ipv6)
+
+![140](images/140.png) 
+
+**layer 3 to layer 4** (determine witch protocol should use in layer4 tcp or udp)
+
+![141](images/141.png) 
+
+**layer 4 to layer 5** (determine witch protocol should use in layer5 )
+
+![142](images/142.png) 
+
+## Port Number
+
+[iana port numbers](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+
+![143](images/143.png) 
+![144](images/144.png) 
+![145](images/145.png) 
+![146](images/146.png) 
+
+## TCP 3 way handshake
+
+SYN = 700 => client says my sequence number is 700.
+sequence number is a number which indicate the order of packets that sends to to server.
+
+1. client send the SYN=700 to the server , and tell the server, my sequence number is 700.
+2. server send SYN=200/ACK=700+(size of received data)701 to the client and says hey client I Acknowledge your request and my Sequence number is 200.
+3. client send ACK=200+1 to the server.
+
+**TCP Acknowledgement**
+
+![147](images/147.png) 
+
+21-7
